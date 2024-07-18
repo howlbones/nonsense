@@ -177,6 +177,10 @@ h1 {
   margin-bottom: 100px;
 }
 
+.tree-generator canvas {
+  pointer-events: none;
+}
+
 .tree-generator__button {
   background-color: var(--button-color); 
 }
@@ -189,14 +193,53 @@ h1 {
   z-index: 9;
 }
 
-.randombar-text {
+.tree-link {
   position: absolute;
   transform: translateX(200px);
   top: 1000px;
   width: 400px;
+  line-height: 50%;
 }
 
-.randombar-text p {
-  font-size: 5px;
+.tree-link a {
+  font-size: 4px;
+  font-weight: 300;
+  color: var(--text-color);
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
 }
 
+.tree-link a:hover {
+  text-decoration: underline;
+  color: var(--highlight-color);
+}
+
+/* Tooltip text */
+.tree-link a .tooltip__tree-link {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--bg2-color);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tree-link a:hover .tooltip__tree-link {
+  visibility: visible;
+}
+
+.tooltip__tree-link img {
+  width: 20px;
+}
