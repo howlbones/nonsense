@@ -1,0 +1,39 @@
+:root {
+  --bg-color: rgb(3, 0, 31);
+  --font-color: rgb(233, 233, 233);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-page {
+  background-color: var(--bg-color);
+  max-width: 100vw;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.hightlight {
+  color: rgb(213, 63, 63);
+}
+
+/* Main page */
+
+.ascii-art {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-70%);
+  filter: brightness(70%);
+}
+
+.king {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-130%);
+  z-index: 10;
+}
