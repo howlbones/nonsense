@@ -40,6 +40,7 @@ body {
   position: relative;
   margin-top: 0;
   padding: 1px;
+  padding-bottom: 100px;
 }
 
 .content-container.mw200 {
@@ -68,7 +69,7 @@ p {
 }
 
 .dark-highlight {
-  color:rgb(39, 39, 39);
+  color:rgb(103, 103, 103);
 }
 
 .dark-highlight:hover {
@@ -112,7 +113,7 @@ h1 {
   flex-direction: column;
   gap: 10px;
   background-image: url('./assets/tripstickers.webp');
-  background-position: 55px;
+  background-position: 57px;
   background-repeat: no-repeat;
 }
 
@@ -120,7 +121,6 @@ h1 {
   width: max-content;
   padding-right: 30px;
 }
-
 
 /* Main page */
 
@@ -143,8 +143,57 @@ h1 {
   position: absolute;
   top: 250px;
   left: 50%;
-  transform: translateX(-130%);
-  z-index: 10;
+  transform: translateX(-90%);
+  z-index: 8;
+  width: 500px;
+  height: 600px;
+}
+
+.king__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.king__img_punch {
+  height: 620px;
+  top: -50px;
+  left: -70px;
+}
+
+.king__img_kick {
+  height: 580px;
+  top: -50px;
+  left: -150px;
+}
+
+.king-controls {
+  position: absolute;
+  z-index: 9;
+  right: 60px;
+  top: 649px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4px;
+}
+
+.king-controls__button {
+  cursor: pointer;
+  color: rgb(223, 223, 223); 
+  background-color: var(--bg2-color);
+  font-size: 12px;
+  border: none;
+  width: min-content;
+}
+
+.king-controls__button:hover {
+  background-color: var(--highlight-color);
+  color: var(--text-color);
+}
+
+.king-controls_kick {
+  position: relative;
+  right: 35px;
 }
 
 .main-page__text-intro {
@@ -174,7 +223,7 @@ h1 {
 
 .tree-generator {
   margin-top: -200px;
-  margin-bottom: 100px;
+  pointer-events: none;
 }
 
 .tree-generator canvas {
@@ -183,6 +232,8 @@ h1 {
 
 .tree-generator__button {
   background-color: var(--button-color); 
+  /* position: relative;
+  z-index: 20; */
 }
 
 .tree-generator__container {
@@ -191,6 +242,7 @@ h1 {
   align-items: center;
   position: relative;
   z-index: 9;
+  pointer-events: none;
 }
 
 .tree-link {
@@ -238,6 +290,10 @@ h1 {
 /* Show the tooltip text when you mouse over the tooltip container */
 .tree-link a:hover .tooltip__tree-link {
   visibility: visible;
+}
+
+.tree-generator__hint {
+  text-align: center;
 }
 
 .tooltip__tree-link img {
