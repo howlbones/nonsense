@@ -5,12 +5,12 @@
 :root {
   --bg-color: rgb(3, 0, 31);
   --bg2-color:rgb(6, 0, 18);
+  --button-color: rgb(34, 51, 243);;
   --font-color: rgb(233, 233, 233);
   --highlight-color: rgb(213, 63, 63);
   --arsenal-font: "Arsenal SC", sans-serif;
   --noto-font: "Noto Sans JP", sans-serif;
   --zilla-font: "Zilla Slab", serif;
-
 }
 
 * {
@@ -87,13 +87,40 @@ h1 {
   background-image: url('./assets/explosion.webp');
 }
 
+.snowfall-bg {
+  background-image: url('./assets/snowfall.webp');
+}
+
 .button {
   width: 100%;
   border-radius: 0;
   color:rgb(246, 246, 246);
-  background-color: rgb(34, 51, 243);
-  letter-spacing: 5px;
+  letter-spacing: 3px;
+  cursor: pointer;
 }
+
+.button:hover {
+  background-color: var(--highlight-color);
+}
+
+/* Navigation */
+.navbar {
+  position: fixed;
+  left: 0;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-image: url('./assets/tripstickers.webp');
+  background-position: 55px;
+  background-repeat: no-repeat;
+}
+
+.navbar__button {
+  width: max-content;
+  padding-right: 30px;
+}
+
 
 /* Main page */
 
@@ -150,6 +177,10 @@ h1 {
   margin-bottom: 100px;
 }
 
+.tree-generator__button {
+  background-color: var(--button-color); 
+}
+
 .tree-generator__container {
   display: flex;
   flex-direction: column;
@@ -158,8 +189,14 @@ h1 {
   z-index: 9;
 }
 
-.snowfall-bg {
-  background-image: url('./assets/snowfall.webp');
+.randombar-text {
+  position: absolute;
+  transform: translateX(200px);
+  top: 1000px;
+  width: 400px;
 }
 
+.randombar-text p {
+  font-size: 5px;
+}
 
