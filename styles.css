@@ -91,6 +91,10 @@ p {
   color: var(--highlight-color);
 }
 
+.glowing-text {
+  text-shadow: 1px 1px 10px white;
+}
+
 h1 {
   font-family: var(--arsenal-font);
 }
