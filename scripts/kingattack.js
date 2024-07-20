@@ -32,3 +32,12 @@ kickButton.addEventListener('mousedown', () => {
     }, 200);
   }
 });
+
+
+
+cr.api(function (page) {
+  page.executeBackendScenario("testirovanie", {
+  param1: "data",
+  param2: 384
+  }).then(function (r) { console.log(r) });
+})

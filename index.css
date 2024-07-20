@@ -1,0 +1,163 @@
+
+/* Main page */
+
+
+.ascii-art {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-70%);
+  filter: brightness(70%);
+}
+
+.king {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-90%);
+  z-index: 8;
+  width: 500px;
+  height: 600px;
+}
+
+.king__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.king__img_punch {
+  height: 620px;
+  top: -50px;
+  left: -70px;
+}
+
+.king__img_kick {
+  height: 580px;
+  top: -50px;
+  left: -150px;
+}
+
+.king-controls {
+  position: absolute;
+  z-index: 9;
+  right: 250px;
+  top: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4px;
+}
+
+.king-controls__button {
+  cursor: pointer;
+  color: rgb(223, 223, 223); 
+  background-color: rgba(0,0,0,0);
+  font-size: 12px;
+  border: none;
+  width: 260px;
+  height: 200px;
+}
+
+.main-page__text-intro {
+  /* text-align: center; */
+  border-left: 1px dashed white;
+  padding: 10px;
+  width: 510px;
+  margin: auto;
+  transform: translateX(150px);
+  margin-top: 220px;
+  font-size: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.ascii-stars {
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 5px;
+  left: 10px;
+}
+
+.main-page__about-me {
+  margin-top: 120px;
+  padding-left: 100px;
+}
+
+.tree-generator {
+  margin-top: -200px;
+  pointer-events: none;
+}
+
+.tree-generator canvas {
+  pointer-events: none;
+}
+
+.tree-generator__button {
+  background-color: var(--button-color); 
+  /* position: relative;
+  z-index: 20; */
+}
+
+.tree-generator__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 9;
+  pointer-events: none;
+}
+
+.tree-link {
+  position: absolute;
+  transform: translateX(200px);
+  top: 1000px;
+  width: 400px;
+  line-height: 50%;
+}
+
+.tree-link a {
+  font-size: 4px;
+  font-weight: 300;
+  color: var(--text-color);
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.tree-link a:hover {
+  text-decoration: underline;
+  color: var(--highlight-color);
+}
+
+/* Tooltip text */
+.tree-link a .tooltip__tree-link {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--bg2-color);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tree-link a:hover .tooltip__tree-link {
+  visibility: visible;
+}
+
+.tree-generator__hint {
+  text-align: center;
+}
+
+.tooltip__tree-link img {
+  width: 20px;
+}
