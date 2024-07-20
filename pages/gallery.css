@@ -16,6 +16,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 20px;
+  margin-bottom: 300px;
 }
 
 .image-showcase__img {
@@ -49,5 +50,40 @@ h1 {
 }
 
 .image-showcase__img_opened:hover {
+  filter: none;
+}
+
+.portraits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.portraits__img-container {
+  display: flex;
+  align-items: end;
+}
+
+.portraits__img {
+  width: 100%;
+  transition: filter 0.3s;
+  object-fit: contain;
+}
+
+.portraits__img-container:nth-child(2) .portraits__img{
+  /* width: 90%; */
+}
+
+.portraits__img-container:nth-child(3) .portraits__img{
+  width: 98%;
+}
+
+.portraits__img:hover {
+  filter: invert();
+}
+
+.portraits__img.image-showcase__img_opened:hover {
   filter: none;
 }
