@@ -111,6 +111,10 @@ h1 {
   background-image: url('./assets/snowfall.webp');
 }
 
+.staticnoise-bg {
+  background-image: url('./assets/staticbg.gif');
+}
+
 .button {
   width: 100%;
   border-radius: 0;

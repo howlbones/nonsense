@@ -72,10 +72,6 @@ h1 {
   object-fit: contain;
 }
 
-.portraits__img-container:nth-child(2) .portraits__img{
-  /* width: 90%; */
-}
-
 .portraits__img-container:nth-child(3) .portraits__img{
   width: 98%;
 }

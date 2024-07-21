@@ -1,7 +1,8 @@
 .content-container {
   max-width: 100vw !important;
-  min-height: 600px !important;
+  min-height: 220px !important;
   padding: 0;
+  padding-top: 1px;
 }
 
 .sun-container {
@@ -9,4 +10,32 @@
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+
+.links-container a {
+  color: white;
+  text-align: center;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-container a:hover {
+  background-image: none;
+}
+
+.contactme-text {
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 300px;
 }
