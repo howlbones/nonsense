@@ -24,6 +24,8 @@ h1 {
   height: 100%;
   object-fit: cover;
   transition: filter 0.3s;
+  position: relative;
+  z-index: 5;
 }
 
 .image-showcase__img:hover {
@@ -47,6 +49,7 @@ h1 {
   transform: translateX(-50%);
   height: 100vh;
   width: auto;
+  z-index: 50;
 }
 
 .image-showcase__img_opened:hover {
@@ -70,6 +73,8 @@ h1 {
   width: 100%;
   transition: filter 0.3s;
   object-fit: contain;
+  position: relative;
+  z-index: 5;
 }
 
 .portraits__img-container:nth-child(3) .portraits__img{
@@ -78,6 +83,13 @@ h1 {
 
 .portraits__img:hover {
   filter: invert();
+}
+
+.portraits__img.image-showcase__img_opened {
+  position: fixed;
+  height: 100vh !important;
+  width: auto;
+  z-index: 50;
 }
 
 .portraits__img.image-showcase__img_opened:hover {
