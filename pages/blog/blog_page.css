@@ -1,0 +1,25 @@
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  gap: 50px;
+}
+
+p {
+  line-height: 150%;
+  font-size: 18px;
+  width: 100%;;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color:aqua;
+}
+
+a:hover {
+  color:red;
+}
