@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satoru Makate</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" type="image/gif" href="./assets/moon4.gif">
+</head>
+<body>
+  <section class="navbar">
+    <a class="navbar__button button" href="../index.html">home</a>
+    <a class="navbar__button button" href="./gallery.html">art gallery</a>
+    <a class="navbar__button button" href="./blog.html">blog</a>
+    <a class="navbar__button button" href="./links.html">friends and neighbours</a>
+    <a class="navbar__button button" href="./contacts.html">contact me</a>
+  </section>
+  <section class="page-container snowfall-bg">
+    <div class="content-container mw600">
+      <h1>Better binary tree visualization</h1>
+      <p>
+        There are tons of binary tree algorithm scripts out there. We love binary trees. 
+        They are a classic introduction to recursion in programming, capable of a unique 
+        problem solving ability. When it comes down to visualising binary trees, a simple 
+        diagram will work for educational purposes. But what about other purposes? <br>
+        When I googled binary trees I would get something like this:
+      </p>
+      <img src="../../assets/simple_binary_tree.webp" alt="Simple binary tree">
+      <p>
+        When you look into some trees that were actually generated with code, you can find something like this:
+      </p>
+      <img src="../../assets/generative-binary-tree.jpg" alt="Generated binary tree">
+      <p>
+        Looks awesome, but it's so straight and unnatural. It's missing so much tree character. I want a binary tree to look like an actual tree.
+        I've searched the web on a qusest to find the best looking binary tree out there..
+        There were close to no binary trees that looked like actual trees. What a bummer.
+      </p>
+      <p>
+        I wanted to fix that, so I introduced more random() into the generation, with some colors. Basically, I've made an 
+        algorithm that will recursively draw circles while moving up, slightly changing directions and getting smaller over time.
+        To add more unpredictability, I've added chances to the branch that it will split after a certain length.
+        Also, after the ongoing branch reaches a certain length, there is a chance that it will grow a leaf.
+        Here is the result:
+      </p>
+      <img src="../../assets/better-binary-tree.jpg" alt="Generated binary tree">
+      <img src="../../assets/better-binary-tree2.jpg" alt="Generated binary tree">
+      <img src="../../assets/better-binary-tree3.jpg" alt="Generated binary tree">
+      <img src="../../assets/better-binary-tree4.jpg" alt="Generated binary tree">
+      <img src="../../assets/better-binary-tree5.jpg" alt="Generated binary tree">
+      <img src="../../assets/better-binary-tree6.jpg" alt="Generated binary tree">
+      <p>
+        Some come out better, some worse. All and all I'm really glad how the generator turned out. Took a while to find the sweetspot
+        in the configuration.
+      </p>
+      <p>
+        Every once in a while you get a stump ~
+      </p>
+      <img src="../../assets/better-binary-tree7.jpg" alt="Generated binary tree">
+      <p>
+        You can play around with the generation live on the main page of <a href="../../index.html" target="_blank">my website</a>.
+        I've also posted the full code on <a href="https://github.com/howlbones/binarytreeartgeneration" target="_blank">github</a>. The github code has a UI with
+         different settings that you can play around with. <br>
+         Btw, watching the leaves grow is very mesmerizing.
+      </p>
+    </div>
+  </section>
+</body>
+</html>
