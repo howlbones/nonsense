@@ -14,9 +14,18 @@
 }
 
 .links-container {
-  margin-top: 400px;
   display: flex;
   justify-content: center;
+}
+
+.worthy-mentions {
+  margin-top: 400px;
+}
+
+.worthy-mentions p {
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 20px; 
 }
 
 .fauux {
