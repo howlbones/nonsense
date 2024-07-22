@@ -11,7 +11,7 @@
   /* --button-color: rgb(34, 51, 243);; */
   --button-color: black;;
   --font-color: rgb(233, 233, 233);
-  --highlight-color: rgb(213, 63, 63);
+  --highlight-color: #d53f3f;
   --arsenal-font: "Arsenal SC", sans-serif;
   --noto-font: "Noto Sans JP", sans-serif;
   --zilla-font: "Zilla Slab", serif;
@@ -113,6 +113,18 @@ h1, h2, h3, h4, h5 {
 
 .staticnoise-bg {
   background-image: url('./assets/staticbg.gif');
+}
+
+.staticnoise2-bg {
+  background-image: url('./assets/staticnoise2.webp');
+}
+
+.staticlines-bg {
+  background-image: url('./assets/staticlines.webp');
+}
+
+.filmgrain-bg {
+  background-image: url('./assets/filmgain.webp');
 }
 
 .button {
