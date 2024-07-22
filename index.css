@@ -1,5 +1,27 @@
-
 /* Main page */
+body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.page-container {
+  background-color: var(--bg-color);
+  max-width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.side-page-container {
+  background-color: black;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 30px;
+}
 
 .ascii-art {
   position: absolute;
@@ -160,3 +182,29 @@
 .tooltip__tree-link img {
   width: 20px;
 }
+
+/* UPDATE LOG */
+
+.updates-container {
+  border: 1px dashed white;
+  padding: 10px;
+}
+
+.updates-container p, .updates-container h3 {
+  font-size: 16px;
+  font-family: var(--terminal-font);
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.updates-container h3 {
+  border-bottom: 1px dashed white;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.update-item {
+  display: flex;
+  gap: 10px;
+}
+
