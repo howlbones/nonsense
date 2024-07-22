@@ -31,6 +31,26 @@ body {
   filter: brightness(70%);
 }
 
+.floating-girl {
+  position: absolute;;
+  top: 100px;
+  left: 50%;
+  z-index: 5;
+  transform: translateX(-100%);
+  width: 500px;
+  filter: brightness(0.95);
+  animation-name: float;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes float {
+  from {transform: translate(-100%, 0);}
+  to {transform: translate(-100%, 40px);}
+}
+
 .king {
   position: absolute;
   top: 250px;
@@ -207,4 +227,5 @@ body {
   display: flex;
   gap: 10px;
 }
+
 
