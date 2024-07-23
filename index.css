@@ -228,4 +228,29 @@ body {
   gap: 10px;
 }
 
+.update-item > p:first-child {
+  text-wrap: nowrap;
+}
+
+.rabbit-hole-btn {
+  display: block;
+  width: min-content;
+  margin: auto;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* BOTTOM OF PAGE */
+
+.launched-in-text {
+  font-size: 12px;
+  text-align: center;
+  margin-top: auto;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 2px;
+  text-wrap: nowrap;
+}
 
