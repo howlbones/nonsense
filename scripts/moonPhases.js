@@ -1194,21 +1194,56 @@ const lunarCalendar = [
 ];
 
 (() => {
+
+  const JulianDateFromUnixTime = (t) => {
+	//Not valid for dates before Oct 15, 1582
+	  return (t / 86400000) + 2440587.5;
+  }
+
+  const UnixTimeFromJulianDate = (jd) => {
+	//Not valid for dates before Oct 15, 1582
+    return (jd-2440587.5)*86400000;
+  }	
+
+  const constrain = (d) => {
+    let t=d%360;
+    if (t<0) {t+=360;}
+    return t;
+  }
+
+  const getIlluminatedFractionOfMoon = (jd) => {
+    const toRad=Math.PI/180.0;
+    const T=(jd-2451545)/36525.0;
+
+    const D = constrain(297.8501921 + 445267.1114034*T - 0.0018819*T*T + 1.0/545868.0*T*T*T - 1.0/113065000.0*T*T*T*T)*toRad; //47.2
+    const M = constrain(357.5291092 + 35999.0502909*T - 0.0001536*T*T + 1.0/24490000.0*T*T*T)*toRad; //47.3
+    const Mp = constrain(134.9633964 + 477198.8675055*T + 0.0087414*T*T + 1.0/69699.0*T*T*T - 1.0/14712000.0*T*T*T*T)*toRad; //47.4
+
+    //48.4
+    const i=constrain(180 - D*180/Math.PI - 6.289 * Math.sin(Mp) + 2.1 * Math.sin(M) -1.274 * Math.sin(2*D - Mp) -0.658 * Math.sin(2*D) -0.214 * Math.sin(2*Mp) -0.11 * Math.sin(D))*toRad;
+
+    const k=(1+Math.cos(i))/2;
+    return k;
+  } 
+
   const moonNameDOM = document.querySelector('.phase-name');
   const moonIlluminationDOM = document.querySelector('.phase-illumination');
   const dateDOM = document.querySelector('.phase-date');
   const moonImgDOM = document.querySelector('.moon-phase-img');
 
-  const curDate = new Date().toLocaleDateString('en-US').split('/');
+  const rawDate = new Date();
+
+  const curDate = rawDate.toLocaleDateString('en-US').split('/');
   curDate[0] = curDate[0].length < 2 ? "0" + curDate[0] : curDate[0];
   curDate[1] = curDate[1].length < 2 ? "0" + curDate[1] : curDate[1];
   const formattedDate = curDate[2] + '-' + curDate[0] + '-' + curDate[1];
   const curMoon = lunarCalendar.filter((el) => el.date === formattedDate);
-  console.log(curMoon);
+  const illuminationVal = getIlluminatedFractionOfMoon(JulianDateFromUnixTime(rawDate)) * 100; 
+  const illuminationPercent = Math.floor(illuminationVal * 100) / 100;
 
   moonNameDOM.textContent = curMoon[0].name;
-  moonIlluminationDOM.textContent = curMoon[0].phase;
   dateDOM.textContent = curMoon[0].date;
+  moonIlluminationDOM.textContent = 'illumination: ' + illuminationPercent + "%";
   let imgPath;
 
   switch (curMoon[0].name) {
@@ -1240,5 +1275,5 @@ const lunarCalendar = [
       imgPath = './assets/moon-new-moon.png';
   }
   moonImgDOM.src = imgPath;
-  consolej.log(imgPath);
+
 })();
