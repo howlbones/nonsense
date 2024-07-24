@@ -208,6 +208,8 @@ body {
 .updates-container {
   border: 1px dashed white;
   padding: 10px;
+  position: relative;
+  z-index: 10;
 }
 
 .updates-container p, .updates-container h3 {
@@ -239,6 +241,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 }
 
 .phase-name {
@@ -269,7 +272,7 @@ body {
 
 .moon-static-img {
   height: 400px;
-  top: -50px;
+  top: -70px;
 
 }
 
