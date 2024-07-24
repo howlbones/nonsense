@@ -1197,7 +1197,7 @@ const lunarCalendar = [
   const moonNameDOM = document.querySelector('.phase-name');
   const moonIlluminationDOM = document.querySelector('.phase-illumination');
   const dateDOM = document.querySelector('.phase-date');
-  console.log(moonNameDOM);
+  const moonImgDOM = document.querySelector('.moon-phase-img');
 
   const curDate = new Date().toLocaleDateString('en-US').split('/');
   curDate[0] = curDate[0].length < 2 ? "0" + curDate[0] : curDate[0];
@@ -1209,4 +1209,36 @@ const lunarCalendar = [
   moonNameDOM.textContent = curMoon[0].name;
   moonIlluminationDOM.textContent = curMoon[0].phase;
   dateDOM.textContent = curMoon[0].date;
+  let imgPath;
+
+  switch (curMoon[0].name) {
+    case "New moon":
+      imgPath = './assets/moon-new-moon.png';
+      break;
+    case "Waxing crescent":
+      imgPath = './assets/moon-waxing-crescent.png';
+      break;
+    case "First quarter":
+      imgPath = './assets/moon-first-quarter.png';
+      break;
+    case "Waxing gibbous":
+      imgPath = './assets/moon-waxing-gibbous.png';
+      break;
+    case "Full moon":
+      imgPath = './assets/moon-full-moon.png';
+      break;
+    case "Waning gibbous":
+      imgPath = './assets/moon-waning-gibbous.png';
+      break;
+    case "Last quarter":
+      imgPath = './assets/moon-last-quarter.png';
+      break;
+    case "Waning crescent":
+      imgPath = './assets/moon-waning-crescent';
+      break;
+    default:
+      imgPath = './assets/moon-new-moon.png';
+  }
+  moonImgDOM.src = imgPath;
+  consolej.log(imgPath);
 })();
