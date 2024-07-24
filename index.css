@@ -232,6 +232,47 @@ body {
   text-wrap: nowrap;
 }
 
+/* Moon phases */
+
+.moon-phases-container {
+  font-family: var(--noto-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phase-name {
+  font-family: var(--arsenal-font);
+  font-size: 16px;
+  position: relative;
+  z-index: 10;
+}
+
+.phase-illumination, .phase-date {
+  /* font-family: var(--arsenal-font); */
+  font-size: 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.moon-phase-img-container {
+  position: relative;
+  height: 200px;
+}
+
+.moon-phase-img, .moon-static-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+.moon-static-img {
+  height: 400px;
+  top: -50px;
+
+}
+
 .rabbit-hole-btn {
   display: block;
   width: min-content;
@@ -253,4 +294,6 @@ body {
   letter-spacing: 2px;
   text-wrap: nowrap;
 }
+
+
 
