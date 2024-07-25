@@ -8,12 +8,16 @@
 
 p {
   line-height: 150%;
-  font-size: 18px;
-  width: 100%;;
+  font-size: 14px;
+  width: 80%;;
+}
+
+h1 {
+  font-weight: 300;
 }
 
 img {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 a {
