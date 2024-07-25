@@ -371,6 +371,11 @@ body {
   margin-left: auto;
 }
 
+/* View counter */
+.view-counter-container {
+  /* display: flex; */
+}
+
 /* BOTTOM OF PAGE */
 
 .launched-in-text {
@@ -384,6 +389,7 @@ body {
   letter-spacing: 2px;
   text-wrap: nowrap;
 }
+
 
 
 
