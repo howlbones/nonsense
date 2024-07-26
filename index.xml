@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>Satoru Makate's blog</title>
   <link>https://satorumakate.com</link>
@@ -14,7 +14,7 @@
   <item>
     <title>Natural binary tree visualization</title>
     <link>https://satorumakate.com/pages/blog/betterbinarytree.html</link>
-    <description>
+    <description><![CDATA[
       <h1>Natural binary tree visualization</h1>
       <p>
         There are tons of binary tree algorithm scripts out there. We love binary trees. 
@@ -59,10 +59,8 @@
           different settings that you can play around with. <br>
           Btw, watching the leaves grow is very mesmerizing.
       </p>
-    </description>
-    <pubDate>
-      Fri, 26 Jul 2024 16:59:47 +0000
-    </pubDate>
+    ]]></description>
+    <pubDate>Fri, 26 Jul 2024 16:59:47 +0000</pubDate>
     <guid>https://satorumakate.com/pages/blog/betterbinarytree.html</guid>
   </item>
 
