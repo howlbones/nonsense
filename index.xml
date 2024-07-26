@@ -2,23 +2,68 @@
 <rss version="2.0">
 <channel>
   <title>Satoru Makate's blog</title>
+  <link>https://satorumakate.com</link>
+  <atom:link href="https://satorumakate.com/index.xml" rel="self" type="application/rss+xml"/>
   <description>Insights, shizo rants, geek outs and things I find amusing.</description>
-  <link>https://rssguide.neocities.org</link>
+  <language>en-us</language>
   <lastBuildDate>
-    Tue, 10 Jul 2018 09:58 +0100
+    Fri, 26 Jul 2024 16:59:47 +0000
   </lastBuildDate>
-  <ttl>20000</ttl>
+  <ttl>1440</ttl>
   
   <item>
-    <title>The title of your item</title>
+    <title>Natural binary tree visualization</title>
+    <link>https://satorumakate.com/pages/blog/betterbinarytree.html</link>
     <description>
-      An arbitrary description of your item, for example the content of your new article, or a short excerpt.
+      <h1>Natural binary tree visualization</h1>
+      <p>
+        There are tons of binary tree algorithm scripts out there. We love binary trees. 
+        They are a classic introduction to recursion in programming, capable of a unique 
+        problem solving ability. When it comes down to visualising binary trees, a simple 
+        diagram will work for educational purposes. But what about other purposes? <br>
+        When I googled binary trees I would get something like this:
+      </p>
+      <img src="https://satorumakate.com/assets/simple_binary_tree.webp" alt="Simple binary tree">
+      <p>
+        When you look into some trees that were actually generated with code, you can find something like this:
+      </p>
+      <img src="https://satorumakate.com/assets/generative-binary-tree.jpg" alt="Generated binary tree">
+      <p>
+        Looks awesome, but it's so straight and unnatural. It's missing so much tree character. I want a binary tree to look like an actual tree.
+        I've searched the web on a qusest to find the best looking binary tree out there..
+        There were close to no binary trees that looked like actual trees. What a bummer.
+      </p>
+      <p>
+        I wanted to fix that, so I introduced more random() into the generation, with some colors. Basically, I've made an 
+        algorithm that will recursively draw circles while moving up, slightly changing directions and getting smaller over time.
+        To add more unpredictability, I've added chances to the branch that it will split after a certain length.
+        Also, after the ongoing branch reaches a certain length, there is a chance that it will grow a leaf.
+        Here is the result:
+      </p>
+      <img src="https://satorumakate.com/assets/better-binary-tree.jpg" alt="Generated binary tree">
+      <img src="https://satorumakate.com/assets/better-binary-tree2.jpg" alt="Generated binary tree">
+      <img src="https://satorumakate.com/assets/better-binary-tree3.jpg" alt="Generated binary tree">
+      <img src="https://satorumakate.com/assets/better-binary-tree4.jpg" alt="Generated binary tree">
+      <img src="https://satorumakate.com/assets/better-binary-tree5.jpg" alt="Generated binary tree">
+      <img src="https://satorumakate.com/assets/better-binary-tree6.jpg" alt="Generated binary tree">
+      <p>
+        Some come out better, some worse. All and all I'm really glad how the generator turned out. Took a while to find the sweetspot
+        in the configuration.
+      </p>
+      <p>
+        Every once in a while you get a stump ~
+      </p>
+      <img src="https://satorumakate.com/assets/better-binary-tree7.jpg" alt="Generated binary tree">
+      <p>
+        I've posted the full code on <a href="https://github.com/howlbones/binarytreeartgeneration" target="_blank">github</a>. The github code has a UI with
+          different settings that you can play around with. <br>
+          Btw, watching the leaves grow is very mesmerizing.
+      </p>
     </description>
-    <link>https://rssguide.neocities.org/the_article.html</link>
     <pubDate>
-      Tue, 10 Jul 2018 09:58 +0100
+      Fri, 26 Jul 2024 16:59:47 +0000
     </pubDate>
-    <guid>https://www.w3schools.com/xml/item0768</guid>
+    <guid>https://satorumakate.com/pages/blog/betterbinarytree.html</guid>
   </item>
 
 </channel>
