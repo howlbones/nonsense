@@ -1,30 +1,9 @@
-.content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 100px;
-  gap: 50px;
+.blog-post img {
+  display: block;
+  width: 60%;
+  margin: 40px auto;
 }
 
-p {
-  line-height: 130%;
-  font-size: 14px;
-  width: 80%;;
-  /* letter-spacing: 1px; */
-}
-
-h1 {
-  font-weight: 600;
-}
-
-img {
-  max-width: 80%;
-}
-
-a {
-  color:aqua;
-}
-
-a:hover {
-  color:red;
+.blog-post h1 {
+  color: var(--highlight-color);
 }

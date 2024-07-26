@@ -6,27 +6,34 @@
   <title>Satoru Makate</title>
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="./blog.css">
-  <link rel="icon" type="image/jpg" href="./assets/red-favicon.jpg">
+  <link rel="icon" type="image/jpg" href="../assets/black-favicon.png">
 </head>
 <body>
-  <section class="navbar">
-    <a class="navbar__button button" href="../index.html">home</a>
-    <a class="navbar__button button" href="./gallery.html">art gallery</a>
-    <a class="navbar__button button" href="./blog.html">blog</a>
-    <a class="navbar__button button" href="./links.html">friends and neighbours</a>
-    <a class="navbar__button button" href="./contacts.html">contact me</a>
-  </section>
-  <section class="page-container">
-    <div class="content-container mw800">
-      <a href="./blog/betterbinarytree.html" class="item-container">
-        <div class="post-img-container">
-          <img src="../assets/better-binary-tree6.jpg" alt="Binary tree">
-        </div>
-        <h3 class="post-title">Natural binary tree visualization</h3>
-        <p class="post-description">A JS algorithm to generate realistic binary trees.</p>
-        <p class="post-date">7-21-2024</p>
-      </a>
-    </div>
-  </section>
+  <div class="page-container">
+
+    <section class="blog-posts">
+      <h1 class="blog-posts__heading">Blog entries</h1>
+      <ul class="blog-posts__list">
+        <li class="blog-posts__post">
+          <a href="./blog/betterbinarytree.html" class="blog-posts__link">
+            Natural binary tree visualization
+          </a>
+          <p class="post-date">7-21-2024</p>
+        </li>
+      </ul>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="atlas">
+      <h3 class="atlas__heading">Atlas ☄</h3>
+      <ul class="atlas__list-container">
+        <li class="atlas__list-item">
+          <a class="atlas__link" href="../index.html">Home</a>
+        </li>
+      </ul>
+    </section>
+
+  </div>
 </body>
 </html>
