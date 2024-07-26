@@ -17,71 +17,16 @@
   <meta itemprop="image" content="https://satorumakate.com/assets/meta-img-cover.jpg">
 </head>
 <body>
-  <section class="navbar">
-    <a class="navbar__button button" href="./index.html">home</a>
-    <a class="navbar__button button scratches-bg" href="./pages/gallery.html">art gallery</a>
-    <a class="navbar__button button landscape-bg" href="./pages/blog.html">blog</a>
-    <a class="navbar__button button" href="./pages/links.html">friends and neighbours</a>
-    <a class="navbar__button button" href="./pages/contacts.html">contact me</a>
-  </section>
-  <section class="page-container staticnoise-bg">
-    <div class="main-page__container content-container mw200">
-    <img class="floating-girl" src="./assets/floating-girl.webp" alt="Floating girl">
-      <img class="ascii-art" src="./assets/satoriascii.png" alt="" class="Ascii character art">
-      <div class="main-page__text-intro">
-        <h1>I'm <span class="highlight">Satoru Makate</span></h1>
-        <p class="main-page__about-me"><b>~ Welcome to my website ~ </b> I'm an artist and a web developer from Russia. This website is meant as a safe haven for self-expression free from the soul-crushing corporate web, adverts, social whoring and censorship. ~ Feel free to click around and share.</p>
-      </div>
-      <div class="king-controls hidden">
-        <button class="king-controls__button king-controls_punch"></button>
-        <button class="king-controls__button king-controls_kick"></button>
-      </div>
-      <div class="tree-generator">
-        <div class="tree-generator__container">
-          <canvas id="canvas"></canvas>
-        </div>
-      </div>
-      <button class="tree-generator__button button" id="generate">REGROW</button>
-      <p class="tiny-text tree-generator__hint">press and practice patience</p>
-      <div class="tree-link">
-        <a href="./pages/blog/betterbinarytree.html">
-          * ∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎<br>
-          * ∎∎∎∎∎∎∎∎∎∎∎∎<br>
-          * ∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎<br>
-          * ∎∎∎∎∎∎∎∎∎<br>
-          * ∎∎∎∎∎∎∎∎∎∎∎<br>
-          * ∎∎∎∎∎∎∎∎∎∎∎∎∎∎<br>
-          * ∎∎∎∎∎∎<br>
-          * ∎∎∎∎∎∎∎∎∎∎∎∎∎<br>
-          * ∎∎∎∎∎∎∎∎∎∎<br>
-          * ∎∎∎∎∎∎∎<br>
-          <span class="tooltip__tree-link">
-            <img src="./assets/highres-tree.webp" alt="Tree photo">
-            about this tree
-          </span>
-        </a>
-      </div>
-      <a class="rabbit-hole-btn" href="./pages/rabbithole/prelude.html">
-        <img src="./assets/buttons/darkrabbitholebuttonsmall.png">
-      </a>
-      <p class="launched-in-text">created in 2024</p>
+  <section class="page-container">
+    <div class="main-page__text-intro">
+      <h1>I'm <span class="highlight">Satoru Makate</span></h1>
+      <p class="main-page__about-me"><b>~ Welcome to my website ~ </b> I'm an artist and a web developer from Russia. This website is meant as a safe haven for self-expression free from the soul-crushing corporate web, adverts, social whoring and censorship. ~ Feel free to click around and share.</p>
     </div>
-  </section>
-  <section class="side-page-container">
-    <div class="side-page-2column-container">
-      <!-- stamps -->
-      <!-- moon phases -->
-      <div class="moon-phases-container">
-      <p class="phase-name"></p>
-      <p class="phase-illumination">illumination: ~</p>
-      <div class="moon-phase-img-container">
-        <img class="moon-static-img" src="./assets/static-ball.webp" alt="" class="moon-phase-bg-gif">
-        <img class="moon-phase-img" src="./assets/moon-new-moon.png" alt="moon img">
+    <div class="two-column-container">
+      <div class="static-gif-container">
+        <img class="static-gif" src="./assets/static-ball.webp" alt="" class="moon-phase-bg-gif">
       </div>
-      <p class="phase-date"></p>
-      </div>
-      <div class="side-panel-right-column-container">
-        <!-- lightning picture -->
+      <div class="currently-reading-container">
         <div class="picture-showcase-container">
           <img src="./assets/lightning-photo.jpg" alt="lightning photo">
         </div>
@@ -117,9 +62,9 @@
         </div>
       </div>
     </div>
-    <!-- Countdown -->
+
     <!-- japanese proverb -->
-    <div class="side-page-2column-container side-page-2column-container_second">
+    <div class="two-column-container two-column-container_second">
       <p class="japanese-proverb">見ぬが花</p>
       <div class="about-me-container">
         <h3 class="about-me-header">A few words about me</h3>
@@ -129,40 +74,24 @@
           I believe in a harmony between body and spirit.
         </p>
       </div>
-      <!-- <div class="sidebar-ascii-art-container">
-        <p class="sidebar-ascii-art">
-          ⠄⠄⠄⣀⠄⠄⠸⢒⢶⣷⣶⣶⣶⣶⣶⢖⠤⠄⠂⠄⢰⠄⠄<br>
-          ⠄⠄⢠⣥⣠⣄⠄⢀⣙⢿⣿⣿⣿⣿⡿⣁⠠⠄⣰⣆⣤⣆⡀<br>
-          ⠄⣠⣷⣫⢳⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣺⣇<br>
-          ⢰⣿⢣⣿⢹⣿⣿⣿⣿⣿⣿⡻⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿<br>
-          ⢿⣿⣿⣿⣸⣿⣿⣿⣿⣿⣿⣻⣝⣿⣿⣿⣿⣿⣿⣇⣿⡇⣿<br>
-          ⠸⣿⣷⣿⣯⣻⣿⣿⣿⣿⣿⡿⡿⣿⣿⣿⣿⡿⣿⣾⣟⣽⡟<br>
-          ⠄⠨⢹⣷⣿⣿⣷⣯⣿⢿⣖⡶⢲⣼⣿⢟⣽⣾⣿⠿⠊⠁⠄<br>
-          ⠄⠄⠄⢭⣭⣵⣿⣿⣿⣯⣿⣿⣿⣿⣳⣿⣿⣿⣷⣶⠟⠁<br>
-          ⠄⠄⠄⠄⠘⠻⣿⣿⣿⣿⣷⠛⠉⣵⣿⣿⣿⣿⠟⠃⠄<br>
-          ⠄⠄⠄⠄⠄⠄⢹⣿⣿⣿⣿⠄⠄⣿⣿⣿⣿⡃⠄⠄<br>
-          ⠄⠄⠄⠄⠄⢀⣾⣿⣿⣿⠃⠄⠄⢸⣿⣿⣿⣇⠄⠄<br>
-          ⠄⠄⠄⠄⠄⣼⣿⣿⣿⡏⠄⠄⠄⠘⣿⣿⣿⣿⡄⠄<br>
-          ⠄⠄⠄⠄⢸⣿⣿⣿⣿⡇⠄⠄⠄⠄⣿⣿⣿⣿⣧⠄ <br>
-        </p>
-      </div> -->
       <img class="console-output-img" src="./assets/consoleoutput.jpg" alt="console output">
     </div>
+
     <!-- guestbook -->
     <a class="guestbook-button button" target="_blank" href="http://users4.smartgb.com/g/g.php?a=s&i=g44-82449-da">Guestbook</a>
+
     <!-- cryptogram -->
+
     <!-- stamps -->
+
     <!-- Link back to my website btn here -->
-    <!-- <div class="link-back-btn"></div> -->
+
     <!-- page view counter -->
      <div class="view-counter-container">
       <p class="view-counter-text">view count:
       <a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=hrvxpqkaf&nd=6&style=2" border="0" alt="visitor counter"></a>
       </p>
      </div>
-    <img src="./assets/candleburnindark.gif" alt="candle burning" class="candle-img">
   </section>
-  <script src="./scripts/treegenerator.js"></script>
-  <script src="./scripts/moonPhases.js"></script>
 </body>
 </html>
