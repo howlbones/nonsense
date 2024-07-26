@@ -21,6 +21,8 @@
   --button-color: black;;
   --font-color: rgb(233, 233, 233);
   --highlight-color: #d53f3f;
+  --link-color: #9bbbff;
+  --link-hover-color: rgb(233, 233, 233);
   --terminal-font: "Iosevka";
 }
 
@@ -52,8 +54,14 @@ p {
   line-height: 130%;
 }
 
-.outer-links a {
+a {
   cursor: pointer;
+  color: var(--link-color);
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--link-hover-color);
 }
 
 .highlight {
@@ -109,4 +117,26 @@ h1, h2, h3, h4, h5 {
   .two-column-container {
     grid-template-columns: 1fr;
   }
+}
+
+/* Atlas */
+.atlas__heading {
+  margin-bottom: 20px;
+}
+
+.atlas__list-container {
+  list-style-type: none;
+}
+
+.atlas__list-item {
+  position: relative;
+  left: 16px;
+}
+
+.atlas__list-item::marker {
+  content: '> ';
+}
+
+.atlas__link {
+  color: var(--link-color);
 }
