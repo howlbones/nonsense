@@ -7,13 +7,14 @@
 }
 
 p {
-  line-height: 150%;
-  font-size: 14px;
+  line-height: 130%;
+  font-size: 18px;
   width: 80%;;
+  /* letter-spacing: 1px; */
 }
 
 h1 {
-  font-weight: 300;
+  font-weight: 600;
 }
 
 img {
