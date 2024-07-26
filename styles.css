@@ -176,6 +176,7 @@ h1, h2, h3, h4, h5 {
 .navbar__button {
   width: max-content;
   padding-right: 30px;
+  text-wrap: nowrap;
 }
 
 @media (max-width: 1000px)  {
@@ -187,5 +188,10 @@ h1, h2, h3, h4, h5 {
     width: 100vw;
     z-index: 15;
     text-align: center;
+  }
+
+  .navbar__button {
+    text-align: center;
+    padding: 0 10px;
   }
 }

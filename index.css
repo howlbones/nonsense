@@ -473,6 +473,22 @@ body {
   .about-me {
     margin-bottom: 20px;
   }
+
+  .tree-generator {
+    display: none;
+  }
+
+  .tree-generator__button {
+    display: none;
+  }
+
+  .tree-generator__hint {
+    display: none;
+  }
+
+  .rabbit-hole-btn {
+    display: none;
+  }
 }
 
 @media (max-width: 810px)  {
@@ -487,6 +503,15 @@ body {
     left: 40px;
     top: 50px;
   }
+
+  .page-container {
+    min-height: min-content;
+  }
+
+  .main-page__container {
+    min-height: min-content;
+    padding-top: 50px;
+  }
 }
 
 @media (max-width: 700px)  {
@@ -498,6 +523,12 @@ body {
     width: 100vw;
     z-index: 15;
     text-align: center;
+  }
+
+  .navbar__button {
+    text-align: center;
+    padding: 0 10px;
+
   }
 
 
@@ -538,6 +569,17 @@ body {
   }
 }
 
+@media (max-width: 530px)  {
+  .main-page__text-intro {
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  .main-page__text-intro h1 {
+    font-size: 30px;
+
+  }
+}
 
 
 
