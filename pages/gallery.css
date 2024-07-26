@@ -17,6 +17,7 @@ h1 {
 .image-showcase {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
   margin-top: 20px;
   margin-bottom: 200px;
 }
@@ -41,6 +42,7 @@ h1 {
 .image-showcase__name {
   text-align: center;
   letter-spacing: 6px;
+  font-size: 14px;
 }
 
 .image-showcase__img_opened {
@@ -83,10 +85,6 @@ h1 {
   width: 98%;
 }
 
-.portraits__img:hover {
-  filter: invert();
-}
-
 .portraits__img.image-showcase__img_opened {
   position: fixed;
   height: 100vh !important;
@@ -104,5 +102,6 @@ h1 {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
+  font-size: 14px;
 }

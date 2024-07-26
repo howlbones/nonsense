@@ -39,15 +39,15 @@
 
 .post-description {
   line-height: 130%;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .post-title {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
 }
 
 .post-date {
   color: grey;
-  font-size: 16px;
+  font-size: 12px;
 }
