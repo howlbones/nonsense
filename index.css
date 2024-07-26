@@ -374,6 +374,21 @@ body {
   line-height: 130%;
 }
 
+/* Guestbook */
+.guestbook-button {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  text-align: center;
+  background-color: var(--highlight-color);
+  color: black;
+  font-size: 16px;
+}
+
+.guestbook-button:hover {
+  background-color: white;
+}
+
 
 /* Candle img */
 
@@ -383,6 +398,10 @@ body {
 }
 
 /* View counter */
+.view-counter-container {
+  margin-top: 50px;
+}
+
 .view-counter-text {
   font-size: 12px;
   /* display: flex; */
