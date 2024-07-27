@@ -22,6 +22,7 @@
   --font-color: rgb(233, 233, 233);
   --highlight-color: #d53f3f;
   --link-color: #9bbbff;
+  /* --link-color: #f6ff00; */
   --link-hover-color: rgb(233, 233, 233);
   --terminal-font: "Iosevka";
 }
