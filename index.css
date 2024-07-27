@@ -86,6 +86,11 @@
   text-wrap: nowrap;
 }
 
+.updates-log {
+  overflow-y: scroll;
+  height: 220px;
+}
+
 /* Japanese proverb */
 .japanese-proverb {
   margin-top: 20px;
