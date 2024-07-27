@@ -68,6 +68,10 @@
         <div class="updates-log">
           <div class="update-item">
             <p>7-27-24 :</p>
+            <p>Moon calendar added to the main page. No fetch requests are made. The calendar is internal.</p>
+          </div>
+          <div class="update-item">
+            <p>7-27-24 :</p>
             <p>New section with my contacts. Feel free to say hi ~</p>
           </div>
           <div class="update-item">
@@ -146,6 +150,22 @@
           src="./assets/consoleoutput.webp"
           alt="console output"
         />
+      </section>
+
+      <!-- Moon -->
+      <section class="two-column-container two-column-container_third">
+        <div class="moon-phases-container">
+          <p class="phase-name"></p>
+          <p class="phase-illumination">illumination: ~</p>
+          <div class="moon-phase-img-container">
+            <img
+              class="moon-phase-img"
+              src="./assets/moon-new-moon.png"
+              alt="moon img"
+            />
+          </div>
+          <p class="phase-date"></p>
+        </div>
       </section>
 
       <!-- site atlas -->
@@ -229,5 +249,6 @@
       async
       src="//gc.zgo.at/count.js"
     ></script>
+    <script src="./scripts/moonPhases.js"></script>
   </body>
 </html>
