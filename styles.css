@@ -57,6 +57,10 @@ p {
   line-height: 130%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 a {
   cursor: pointer;
   color: var(--link-color);
