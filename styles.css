@@ -88,6 +88,10 @@ a:hover {
   text-shadow: 1px 1px 10px white;
 }
 
+.strike-through {
+  text-decoration: line-through;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: var(--terminal-font);
   font-weight: 400;

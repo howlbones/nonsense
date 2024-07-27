@@ -1,0 +1,5 @@
+.bucket-list__items li {
+  margin-bottom: 10px;
+  position: relative;
+  left: 30px;
+}
