@@ -41,6 +41,7 @@
 
 .two-column-container_second {
   grid-template-rows: 60px 1fr;
+  column-gap: 20px;
 }
 
 /* Currently reading */
@@ -105,6 +106,28 @@
   max-width: 100%;
   position: relative;
   right: 6px;
+}
+
+.console-output {
+  line-height: 80%;
+  font-size: 9px;
+  position: relative;
+  top: 4px;
+}
+
+.console-output-booting-table {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.console-output-config-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 4fr;
+}
+.console-output-last-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 6fr;
+  gap: 4px;
 }
 
 /* About me */

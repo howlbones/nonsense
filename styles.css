@@ -27,6 +27,16 @@
   --terminal-font: "Iosevka";
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: rgb(0, 0, 0);
+  background: yellow;
+}
+
+::selection {
+  color: yellow;
+  background: black;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

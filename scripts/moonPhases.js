@@ -1269,7 +1269,7 @@ const lunarCalendar = [
       imgPath = './assets/moon-last-quarter.png';
       break;
     case "Waning crescent":
-      imgPath = './assets/moon-waning-crescent';
+      imgPath = './assets/moon-waning-crescent.png';
       break;
     default:
       imgPath = './assets/moon-new-moon.png';
