@@ -1214,7 +1214,6 @@ const lunarCalendar = [
   const getIlluminatedFractionOfMoon = (jd) => {
     const toRad=Math.PI/180.0;
     const T=(jd-2451545)/36525.0;
-
     const D = constrain(297.8501921 + 445267.1114034*T - 0.0018819*T*T + 1.0/545868.0*T*T*T - 1.0/113065000.0*T*T*T*T)*toRad; //47.2
     const M = constrain(357.5291092 + 35999.0502909*T - 0.0001536*T*T + 1.0/24490000.0*T*T*T)*toRad; //47.3
     const Mp = constrain(134.9633964 + 477198.8675055*T + 0.0087414*T*T + 1.0/69699.0*T*T*T - 1.0/14712000.0*T*T*T*T)*toRad; //47.4

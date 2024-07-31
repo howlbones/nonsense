@@ -8,3 +8,14 @@
   color: var(--highlight-color);
 }
 
+p, h1, h2, h3 {
+  margin-top: 20px;
+}
+
+.blog-post li {
+  font-size: 14px;
+}
+
+ul {
+  list-style-type: circle;
+}
