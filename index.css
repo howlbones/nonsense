@@ -1,3 +1,4 @@
+
 /* Main page */
 .main-page__text-intro {
   border-left: 1px dashed white;
@@ -13,6 +14,22 @@
   font-size: 14px;
   margin-top: 50px;
   max-width: 300px;
+}
+
+.page-container {
+  overflow: hidden;
+}
+
+/* Flaoting girl */
+
+.floating-girl {
+  position: absolute;
+  top: 0;
+
+}
+
+.floating-girl__img {
+  width: 200px;
 }
 
 /* Static noise */
