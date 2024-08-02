@@ -17,19 +17,41 @@
 }
 
 .page-container {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Flaoting girl */
 
 .floating-girl {
   position: absolute;
-  top: 0;
+  top: 80px;
+  right: 0;
+  width: 200px;
+}
 
+.floating-girl__line {
+  width: 30px;
+  margin: auto;
+  position: relative;
+  right: 20px;
+  height: 240px;
 }
 
 .floating-girl__img {
   width: 200px;
+  position: relative;
+  left: -80px;
+  top: 10px;
+  animation: float 3s alternate infinite ease-in-out;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+  from {
+    transform: translateY(15px);
+  }
 }
 
 /* Static noise */
