@@ -16,6 +16,13 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: 'Iosevka';
+    src: url('./fonts/PkgTTC-Iosevka-30.3.3/Iosevka-Thin.ttc') format('truetype');
+    font-weight: 200;
+}
+
+
 :root {
   --bg-color: rgb(0, 0, 0);
   --button-color: black;;
@@ -23,7 +30,7 @@
   --highlight-color: #d53f3f;
   --link-color: #9bbbff;
   /* --link-color: #f6ff00; */
-  --link-hover-color: rgb(233, 233, 233);
+  --link-hover-color: rgb(227, 255, 15);
   --terminal-font: "Iosevka";
 }
 
@@ -47,14 +54,14 @@ body {
   color: var(--font-color);
   background-color: var(--bg-color);
   font-family: 'Iosevka';
+  letter-spacing: 0.4px;
 }
 
 .page-container {
   background-color: var(--bg-color);
   max-width: 600px;
   padding: 20px;
-  padding-top: 60px;
-  padding-bottom: 100px;
+  transform: translateY(50%);
   margin: 0 auto;
   position: relative;
 }
@@ -66,6 +73,8 @@ body {
 p {
   font-size: 14px;
   line-height: 130%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -152,8 +161,8 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Atlas */
-.atlas__heading {
-  margin-bottom: 20px;
+.atlas {
+  margin-top: 20px;
 }
 
 .atlas__list-container {
@@ -168,11 +177,12 @@ h1, h2, h3, h4, h5 {
 
 .atlas__list-item::marker {
   content: '> ';
+  font-size: 12px;
 }
 
 .atlas__link {
   color: var(--link-color);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .divider {
@@ -183,7 +193,7 @@ h1, h2, h3, h4, h5 {
 
 .rss {
   position: absolute;
-  top: 80px;
+  top: 40px;
   right: 20px;
 }
 

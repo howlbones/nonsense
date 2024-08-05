@@ -1,30 +1,21 @@
-
-/* Main page */
 .main-page__text-intro {
-  border-left: 1px dashed white;
-  padding: 10px;
+  max-width: 300px;
 }
 
 .main-page__text-intro h1 {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 600;
 }
 
 .main-page__about-me {
   font-size: 14px;
-  margin-top: 50px;
-  max-width: 300px;
-}
-
-.page-container {
-  /* overflow: hidden; */
 }
 
 /* Flaoting girl */
 
 .floating-girl {
   position: absolute;
-  top: 80px;
+  top: 40px;
   right: 0;
   width: 200px;
 }
@@ -54,171 +45,11 @@
   }
 }
 
-/* Static noise */
-
-.static-gif-container {
-  height: 200px;
-  overflow: hidden;
-}
-.static-gif {
-  width: 450px;
-  position: relative;
-  bottom: 130px;
-}
-
-/* PICTURE SHOWCASE */
-.picture-showcase-container {
-  width: 200px;
-  padding: 5px;
-  border: 1px dashed white;
-  height: min-content;
-}
-
-.picture-showcase-container img{
-  width: 100%;
-}
-
-.two-column-container_second {
-  grid-template-rows: 60px 1fr;
-  column-gap: 20px;
-}
-
-/* Currently reading */
-
-.currently-reading-container {
-  position: relative;
-  z-index: 10;
-  width: min-content;
-}
-
-.currently-reading {
-  font-family: var(--terminal-font);
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-/* UPDATE LOG */
-
-.updates-container {
-  border: 1px dashed white;
-  padding: 10px;
-  position: relative;
-  z-index: 10;
-}
-
-.updates-container p, .updates-container h3 {
-  font-family: var(--terminal-font);
-}
-
-.updates-container h3 {
-  border-bottom: 1px dashed white;
-  padding-bottom: 5px;
-  margin-bottom: 5px;
-  margin-top: 0px;
-}
-
-.update-item {
-  display: flex;
-  gap: 10px;
-}
-
-.update-item > p:first-child {
-  text-wrap: nowrap;
-}
-
-.updates-log {
-  overflow-y: scroll;
-  height: 220px;
-  padding-right: 20px;
-}
-
-/* Japanese proverb */
-.japanese-proverb {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: min-content;
-  width: 100%;
-  font-family: initial;
-}
-
-/* Console output img */
-.console-output-img {
-  max-width: 100%;
-  position: relative;
-  right: 6px;
-}
-
-.console-output {
-  line-height: 80%;
-  font-size: 9px;
-  position: relative;
-  top: 4px;
-}
-
-.console-output-booting-table {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-}
-
-.console-output-config-table {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 4fr;
-}
-.console-output-last-table {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 6fr;
-  gap: 4px;
-}
-
-/* About me */
-.about-me-container {
-  grid-row: 1 / 3;
-  grid-column: 2 / 3;
-}
-
-.about-me-header {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.about-me {
-  font-family: var(--terminal-font);
-  font-size: 14px;
-  line-height: 130%;
-}
-
-/* MOON */
-.moon-phases-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.phase-name {
-  font-size: 12px;
-  margin-bottom: 5px;
-}
-
-.phase-illumination {
-  font-size: 10px;
-}
-
-.phase-date {
-  font-size: 10px;
-}
-
-.moon-phase-img {
-  width: 100px;
-  margin: 10px 0;
-}
-
 /* Personal button */
 .personal-button {
-
   display: flex;
   flex-direction: column;
   align-items: end;
-
 }
 
 .personal-button > a{
@@ -238,57 +69,4 @@
 
 .personal-button textarea:focus {
   outline: none;
-}
-
-/* Guestbook */
-.guestbook-button {
-  display: block;
-  margin: 20px auto;
-  width: 200px;
-  text-align: center;
-  background-color: var(--highlight-color);
-  color: black;
-  font-size: 16px;
-}
-
-.guestbook-button:hover {
-  background-color: white;
-  color: black;
-}
-
-/* View counter */
-.view-counter-container {
-  margin-top: 50px;
-}
-
-.view-counter-text {
-  font-size: 12px;
-  /* display: flex; */
-}
-
-@media (max-width: 550px) {
-  .floating-girl {
-    display: none;
-  }
-}
-
-@media (max-width: 470px) {
-  .two-column-container_second {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
-
-  .about-me-container {
-    grid-row: 2;
-    grid-column: 1;
-    margin-bottom: 50px;
-  }
-
-  .static-gif-container {
-    height: 250px;
-  }
-
-  .static-gif {
-    bottom: 120px;
-  }
 }
