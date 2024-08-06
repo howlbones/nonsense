@@ -5,15 +5,6 @@
   list-style-type: none;
 }
 
-.blog-posts__post {
-  position: relative;
-  left: 16px;
-}
-
-.blog-posts__post::marker {
-  content: '∎ ';
-}
-
 .blog-posts__link {
   color: var(--link-color);
   display: block;

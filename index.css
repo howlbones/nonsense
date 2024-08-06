@@ -11,11 +11,12 @@
   font-size: 14px;
 }
 
+
 /* Flaoting girl */
 
 .floating-girl {
   position: absolute;
-  top: 40px;
+  top: 20px;
   right: 0;
   width: 200px;
 }

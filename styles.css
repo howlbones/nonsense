@@ -28,9 +28,10 @@
   --button-color: black;;
   --font-color: rgb(233, 233, 233);
   --highlight-color: #d53f3f;
-  --link-color: #9bbbff;
+  /* --link-color: #9bbbff; */
+  --link-color: rgb(233, 233, 233);
   /* --link-color: #f6ff00; */
-  --link-hover-color: rgb(227, 255, 15);
+  --link-hover-color: #d53f3f;
   --terminal-font: "Iosevka";
 }
 
@@ -60,9 +61,16 @@ body {
 .page-container {
   background-color: var(--bg-color);
   max-width: 600px;
+  min-height: 100vh;
   padding: 20px;
-  transform: translateY(50%);
   margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-box {
   position: relative;
 }
 
@@ -119,7 +127,14 @@ a:hover {
   background-image: url('./assets/particles.webp');
 }
 
-h1, h2, h3, h4, h5 {
+h1 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2, h3, h4, h5 {
   font-family: var(--terminal-font);
   font-weight: 400;
   font-size: 18px;
@@ -193,10 +208,10 @@ h1, h2, h3, h4, h5 {
 
 .rss {
   position: absolute;
-  top: 40px;
-  right: 20px;
+  top: 18px;
+  right: 0px;
 }
 
 .rss img {
-  width: 20px;
+  width: 12px;
 }
