@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>Satoru Makate's blog</title>
-  <link>https://satorumakate.com</link>
-  <atom:link href="https://satorumakate.com/index.xml" rel="self" type="application/rss+xml"/>
-  <description>Insights, shizo rants, geek outs and things I find amusing.</description>
+  <title>stygianwhite | Блог</title>
+  <link>https://stygianwhite.ru</link>
+  <atom:link href="https://stygianwhite.ru/index.xml" rel="self" type="application/rss+xml"/>
+  <description>Идеи, шизо-демагогия, выдумки и прочее, что показалось мне забавным.</description>
   <image>
-    <url>https://satorumakate.com/favicon.png</url>
-    <title>Satoru Makate</title>
-    <link>https://satorumakate.com/</link>
+    <url>https://stygianwhite.ru/favicon.jpg</url>
+    <title>stygianwhite</title>
+    <link>https://stygianwhite.ru/</link>
   </image>
-  <language>en-us</language>
+  <language>ru</language>
   <lastBuildDate>
-    Wed, 31 Jul 2024 15:00:02 +0000
+    Tue, 06 Aug 2024 16:46:19 +0000
   </lastBuildDate>
   <ttl>1440</ttl>
 
   <item>
-    <title>Living in Russia vs USA: Pros and Cons</title>
-    <link>https://satorumakate.com/pages/blog/livinginrussiavsusa.html</link>
+    <title>Жизнь в России и США: плюсы и минусы</title>
+    <link>https://stygianwhite.ru/pages/blog/livinginrussiavsusa.html</link>
     <description><![CDATA[
-      <p>A list of pros and cons that I came up with having experienced the living in both countries.</p>
+      <p>Список плюсов и минусов жизни в обеих странах. Жизненный опыт.</p>
     ]]></description>
     <pubDate>
       Wed, 31 Jul 2024 15:00:02 +0000
     </pubDate>
-    <guid>https://satorumakate.com/pages/blog/livinginrussiavsusa.html</guid>
+    <guid>https://stygianwhite.ru/pages/blog/livinginrussiavsusa.html</guid>
   </item>
   
   <item>
-    <title>Natural binary tree visualization</title>
-    <link>https://satorumakate.com/pages/blog/betterbinarytree.html</link>
+    <title>Естественная визуальзация бинарных деревьев</title>
+    <link>https://stygianwhite.ru/pages/blog/betterbinarytree.html</link>
     <description><![CDATA[
-      <img src="https://satorumakate.com/assets/better-binary-tree.jpg" alt="Generated binary tree">
-      <p>Classic binary trees are too generic. I made them more natural looking with randomness and colors.</p>
+      <img src="https://stygianwhite.ru/assets/better-binary-tree.jpg" alt="Generated binary tree">
+      <p>Классические бинарные деревья скучны. Я сделал их похожими на настоящие.</p>
     ]]></description>
     <pubDate>
       Fri, 26 Jul 2024 18:00:30 +0000
     </pubDate>
-    <guid>https://satorumakate.com/pages/blog/betterbinarytree.html</guid>
+    <guid>https://stygianwhite.ru/pages/blog/betterbinarytree.html</guid>
   </item>
 
 </channel>
