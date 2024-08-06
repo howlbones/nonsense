@@ -4,10 +4,6 @@
   margin: 40px auto;
 }
 
-.blog-post h1 {
-  color: var(--highlight-color);
-}
-
 p, h1, h2, h3 {
   margin-top: 20px;
 }

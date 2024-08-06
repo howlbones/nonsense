@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Natural binary trees</title>
+  <title>Естественные бинарные деревья</title>
   <link rel="stylesheet" href="../../styles.css">
   <link rel="stylesheet" href="./blog_page.css">
   <link rel="icon" href="/favicon.png" type="image/x-icon">
@@ -11,63 +11,60 @@
 </head>
 <body>
  <div class="page-container">
+      <div class="content-box">
     <section class="blog-post"> 
-      <h1>Natural binary tree visualization</h1>
-      <p>
-        There are tons of binary tree algorithm scripts out there. We love binary trees. 
-        They are a classic introduction to recursion in programming, capable of a unique 
-        problem solving ability. When it comes down to visualising binary trees, a simple 
-        diagram will work for educational purposes. But what about other purposes? <br>
-        When I googled binary trees I would get something like this:
-      </p>
-      <img src="../../assets/simple_binary_tree.webp" alt="Simple binary tree">
-      <p>
-        When you look into some trees that were actually generated with code, you can find something like this:
-      </p>
-      <img src="../../assets/generative-binary-tree.jpg" alt="Generated binary tree">
-      <p>
-        Looks awesome, but it's so straight and unnatural. It's missing so much tree character. I want a binary tree to look like an actual tree.
-        I've searched the web on a qusest to find the best looking binary tree out there..
-        There were close to no binary trees that looked like actual trees. What a bummer.
-      </p>
-      <p>
-        I wanted to fix that, so I introduced more random() into the generation, with some colors. Basically, I've made an 
-        algorithm that will recursively draw circles while moving up, slightly changing directions and getting smaller over time.
-        To add more unpredictability, I've added chances to the branch that it will split after a certain length.
-        Also, after the ongoing branch reaches a certain length, there is a chance that it will grow a leaf.
-        Here is the result:
-      </p>
-      <img src="../../assets/better-binary-tree.jpg" alt="Generated binary tree">
-      <img src="../../assets/better-binary-tree2.jpg" alt="Generated binary tree">
-      <img src="../../assets/better-binary-tree3.jpg" alt="Generated binary tree">
-      <img src="../../assets/better-binary-tree4.jpg" alt="Generated binary tree">
-      <img src="../../assets/better-binary-tree5.jpg" alt="Generated binary tree">
-      <img src="../../assets/better-binary-tree6.jpg" alt="Generated binary tree">
-      <p>
-        Some come out better, some worse. All and all I'm really glad how the generator turned out. Took a while to find the sweetspot
-        in the configuration.
-      </p>
-      <p>
-        Every once in a while you get a stump ~
-      </p>
-      <img src="../../assets/better-binary-tree7.jpg" alt="Generated binary tree">
-      <p>
-        I've posted the full code on <a href="https://github.com/howlbones/binarytreeartgeneration" target="_blank">github</a>. The github code has a UI with
-          different settings that you can play around with. <br>
-          Btw, watching the leaves grow is very mesmerizing.
-      </p>
+      <h1>Визуализация естественных бинарных деревьев</h1>
+<p>
+  Существует множество скриптов построения бинарных деревьев. Мы любим бинарные деревья. 
+  Они являются классическим введением в рекурсию в программировании, обладая уникальной способностью решать проблемы. 
+  Когда дело доходит до визуализации бинарных деревьев, простая схема подойдет для образовательных целей. 
+  Но что насчет других целей? <br>
+  Когда я искал в Google бинарные деревья, я нашел что-то вроде этого:
+</p>
+<img src="../../assets/simple_binary_tree.webp" alt="Простое бинарное дерево">
+<p>
+  Когда вы посмотрите на некоторые деревья, которые действительно были сгенерированы с помощью кода, вы можете найти что-то вроде этого:
+</p>
+<img src="../../assets/generative-binary-tree.jpg" alt="Сгенерированное бинарное дерево">
+<p>
+  Выглядит круто, но оно такое прямое и неестественное. Ему не хватает характерных черт настоящего дерева. Я хочу, чтобы бинарное дерево выглядело как настоящее дерево.
+  Я искал в интернете бинарные деревья, похожие на настоящие...
+  Практически не было бинарных деревьев, которые выглядели бы как настоящие деревья. Какое разочарование.
+</p>
+<p>
+  Я захотел исправить это, поэтому я добавил больше random() в генерацию + немного цветов. В общих чертах, я создал алгоритм, который рекурсивно рисует круги, поднимаясь вверх, слегка изменяя направления и уменьшаясь со временем.
+  Чтобы добавить больше непредсказуемости, я добавил вероятность того, что ветка разделится после определенной длины.
+  Также, после того как текущая ветка достигнет определенной длины, существует вероятность, что на ней вырастет лист.
+  Вот результат:
+</p>
+<img src="../../assets/better-binary-tree.jpg" alt="Сгенерированное бинарное дерево">
+<img src="../../assets/better-binary-tree2.jpg" alt="Сгенерированное бинарное дерево">
+<img src="../../assets/better-binary-tree3.jpg" alt="Сгенерированное бинарное дерево">
+<img src="../../assets/better-binary-tree4.jpg" alt="Сгенерированное бинарное дерево">
+<img src="../../assets/better-binary-tree5.jpg" alt="Сгенерированное бинарное дерево">
+<img src="../../assets/better-binary-tree6.jpg" alt="Сгенерированное бинарное дерево">
+<p>
+  Некоторые получаются лучше, некоторые хуже. В общем, я очень доволен тем, как получился генератор. Потребовалось время, чтобы найти оптимальные настройки.
+</p>
+<p>
+  Время от времени получается пень ~
+</p>
+<img src="../../assets/better-binary-tree7.jpg" alt="Сгенерированное бинарное дерево">
+<p>
+  Я выложил полный код на <a href="https://github.com/howlbones/binarytreeartgeneration" target="_blank">GitHub</a>. Код на GitHub имеет пользовательский интерфейс с различными настройками, с которыми можно поиграть. <br>
+  Кстати, наблюдение за ростом листьев очень завораживает.
+</p>
     </section>
     
     <div class="divider"></div>
 
     <section class="atlas">
-      <h3 class="atlas__heading">Atlas ☄</h3>
       <ul class="atlas__list-container">
         <li class="atlas__list-item">
-          <a class="atlas__link" href="../../index.html">Home</a>
+          <a class="atlas__link" href="../../index.html">Домой</a>
         </li>
         <li class="atlas__list-item">
-          <a class="atlas__link" href="../blog.html">Back to blog list</a>
+          <a class="atlas__link" href="../blog.html">Назад к статьям</a>
         </li>
       </ul>
     </section>
@@ -76,6 +73,8 @@
     <a class="rss" target="_blank" href="/index.xml">
       <img src="../../assets/rss-icon.png" alt="RSS icon">
     </a>
+
+      </div>
   </div>
 </body>
 </html>
