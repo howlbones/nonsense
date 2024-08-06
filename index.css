@@ -71,3 +71,11 @@
 .personal-button textarea:focus {
   outline: none;
 }
+
+@media (max-width: 540px) {
+  .floating-girl {
+    position: static;
+    margin: 40px auto;
+  }
+  
+}
