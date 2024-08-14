@@ -12,9 +12,22 @@
   </image>
   <language>ru</language>
   <lastBuildDate>
-    Tue, 06 Aug 2024 16:46:19 +0000
+    Wed, 14 Aug 2024 10:06:36 +0000
   </lastBuildDate>
   <ttl>1440</ttl>
+
+  <item>
+    <title>Мой любимый Sputnik - Харуки Мураками</title>
+    <link>https://stygianwhite.ru/pages/blog/sputnik-murakami.html</link>
+    <description><![CDATA[
+      <img src="https://stygianwhite.ru/assets/sputnik-murakami.webp" alt="Murakami's book">
+      <p>Краткая рецензия на очередное произведение Мураками.</p>
+    ]]></description>
+    <pubDate>
+      Wed, 14 Aug 2024 10:06:36 +0000
+    </pubDate>
+    <guid>https://stygianwhite.ru/pages/blog/sputnik-murakami.html</guid>
+  </item>
 
   <item>
     <title>Жизнь в России и США: плюсы и минусы</title>
